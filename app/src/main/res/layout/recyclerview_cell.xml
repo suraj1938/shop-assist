@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.application.shopassist.ExpandableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expand_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:id="@+id/question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/question_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="start"
+            android:padding="8dp"
+            android:text="Question"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:drawableRight="@drawable/drop_down1"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/answer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_textview"
+        android:background="#E8E8E8"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/answer_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Answer"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</com.application.shopassist.ExpandableLayout>

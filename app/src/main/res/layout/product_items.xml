@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    app:cardBackgroundColor="#FFFFFF"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    android:id="@+id/product_items">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/productName"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="198dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="start"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="data" />
+
+        <ImageView
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginStart="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/productName"
+            app:layout_constraintStart_toEndOf="@+id/productName"
+
+            app:layout_constraintTop_toTopOf="@+id/productName"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_add_circle_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_btn"
+            app:layout_constraintStart_toEndOf="@+id/add_btn"
+            app:layout_constraintTop_toTopOf="@+id/add_btn"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_remove_circle_black_24dp"
+            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

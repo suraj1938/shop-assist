@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "852044525075",
+    "firebase_url": "https://shop-assist-7d62d.firebaseio.com",
+    "project_id": "shop-assist-7d62d",
+    "storage_bucket": "shop-assist-7d62d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852044525075:android:593a9869c33d925b6d19e6",
+        "android_client_info": {
+          "package_name": "com.application.shopassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852044525075-o98i1lf4267010vqrgvl42umae989q3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.shopassist",
+            "certificate_hash": "d018a95945930aef3fe736032317fa3540a81df1"
+          }
+        },
+        {
+          "client_id": "852044525075-l69tum2uqq7roj2dfjvqa4u951t5ge20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOdvbP08wswLS7ewRE6jVISBoCksMG9xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852044525075-l69tum2uqq7roj2dfjvqa4u951t5ge20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

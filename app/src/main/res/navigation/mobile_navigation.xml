@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_shoppinglist">
+
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.application.shopassist.ui.favourites.FavouritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favourites">
+    <action
+        android:id="@+id/action_navigation_pricecomparison_to_IPCResultsFragment"
+        app:destination="@id/IPCResultsFragment" />
+    <action
+        android:id="@+id/action_navigation_pricecomparison_to_noProductFound"
+        app:destination="@id/noProductFound" />
+    <action
+        android:id="@+id/action_navigation_pricecomparison_to_CPCResultsFragment"
+        app:destination="@id/CPCResultsFragment" />
+        </fragment>
+
+    <fragment
+        android:id="@+id/navigation_shoppinglist"
+        android:name="com.application.shopassist.ui.shoppinglist.ShoppingListFragment"
+        android:label="Shopping List"
+        tools:layout="@layout/fragment_shoppinglist" >
+    <action
+        android:id="@+id/action_navigation_pricecomparison_to_IPCResultsFragment"
+        app:destination="@id/IPCResultsFragment" />
+    <action
+        android:id="@+id/action_navigation_pricecomparison_to_noProductFound"
+        app:destination="@id/noProductFound" />
+    <action
+        android:id="@+id/action_navigation_pricecomparison_to_CPCResultsFragment"
+        app:destination="@id/CPCResultsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_pricecomparison"
+        android:name="com.application.shopassist.ui.pricecomparison.PriceComparisonFragment"
+        android:label="Price Comparison"
+        tools:layout="@layout/fragment_pricecomparison" >
+        <action
+            android:id="@+id/action_navigation_pricecomparison_to_IPCResultsFragment"
+            app:destination="@id/IPCResultsFragment" />
+        <action
+            android:id="@+id/action_navigation_pricecomparison_to_noProductFound"
+            app:destination="@id/noProductFound" />
+        <action
+            android:id="@+id/action_navigation_pricecomparison_to_CPCResultsFragment"
+            app:destination="@id/CPCResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/IPCResultsFragment"
+        android:name="com.application.shopassist.ui.pricecomparison.IPCResultsFragment"
+        android:label="i_p_c_results_fragment"
+        tools:layout="@layout/i_p_c_results_fragment" />
+    <fragment
+        android:id="@+id/noProductFound"
+        android:name="com.application.shopassist.ui.pricecomparison.NoProductFound"
+        android:label="fragment_no_product_found"
+        tools:layout="@layout/fragment_no_product_found" />
+    <fragment
+        android:id="@+id/CPCResultsFragment"
+        android:name="com.application.shopassist.ui.pricecomparison.CPCResultsFragment"
+        android:label="CPCResultsFragment" />
+</navigation>
